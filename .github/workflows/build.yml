@@ -26,8 +26,8 @@ jobs:
           npm ci
           npm run build          
 
-      - name: Deploy
-        uses: Hamppy/actions-portfolio@v3
+      - name: GitHub Pages action
+        uses: peaceiris/actions-gh-pages@v4.0.0
         with:
           publish_dir: ./_site
           github_token: ${{ secrets.GITHUB_TOKEN }}
