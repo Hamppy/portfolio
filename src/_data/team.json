@@ -4,7 +4,7 @@
     {
       "name": "PABLO ESCOBAR",
       "dig": "Creative Director",
-      "img": "./assets/images/team/team-member-one.jpg",
+      "img": "{{ '/assets/images/team/team-member-one.jpg' | url }}",
       "social":[
         {
           "icon": "medium",
@@ -23,7 +23,7 @@
     {
       "name": "MONTINO RIAU",
       "dig": "Product Manager",
-      "img": "./assets/images/team/team-member-two.jpg",
+      "img": "{{ '/assets/images/team/team-member-two.jpg' | url }}",
       "social":[
         {
           "icon": "medium",
@@ -42,7 +42,7 @@
     {
       "name": "ALEX NAASRI",
       "dig": "Chief Design Officer",
-      "img": "./assets/images/team/team-member-three.jpg",
+      "img": "{{ '/assets/images/team/team-member-three.jpg' | url }}",
       "social":[
         {
           "icon": "medium",
@@ -61,7 +61,7 @@
     {
       "name": "HONGMAN CHIOA",
       "dig": "UX Researcher",
-      "img": "./assets/images/team/team-member-four.jpg",
+      "img": "{{ '/assets/images/team/team-member-four.jpg' | url }}",
       "social":[
         {
           "icon": "medium",
@@ -80,7 +80,7 @@
     {
       "name": "SANTIO ANDRESS",
       "dig": "Content Researcher",
-      "img": "./assets/images/team/team-member-five.jpg",
+      "img": "{{ '/assets/images/team/team-member-five.jpg' | url }}",
       "social":[
         {
           "icon": "medium",
@@ -99,7 +99,7 @@
     {
       "name": "RAMESH PAUL",
       "dig": "Creative Designer",
-      "img": "./assets/images/team/team-member-six.jpg",
+      "img": "{{ '/assets/images/team/team-member-six.jpg' | url }}",
       "social":[
         {
           "icon": "medium",

@@ -62,7 +62,7 @@
             </li>
             {% endfor %}
             <li class="nav-item">
-              <a class="nav-link btn btn-sm btn-primary btn-sm-rounded" href="/{{nav.navBtnLink}}">
+              <a class="nav-link btn btn-sm btn-primary btn-sm-rounded" href="/portfolio/{{nav.navBtnLink}}">
                 <span class="btn-area">
                   <span data-text="{{nav.navBtnText}}">
                     {{nav.navBtnText}}
@@ -88,7 +88,7 @@
             <h1 class="site-cta-title">{{workTogether.heading}}</h1>
             <ul class="site-cta-buttons">
               <li>
-                <a href="/{{workTogether.submitBtn.btnLink}}" class="btn btn-secondary">
+                <a href="/portfolio/{{workTogether.submitBtn.btnLink}}" class="btn btn-secondary">
                   <span class="btn-area">
                     <span data-text="{{workTogether.submitBtn.btnText}}">
                       {{workTogether.submitBtn.btnText}}
@@ -97,7 +97,7 @@
                 </a>
               </li>
               <li>
-                <a href="/{{workTogether.convBtn.btnLink}}" class="btn btn-primary">
+                <a href="/portfolio/{{workTogether.convBtn.btnLink}}" class="btn btn-primary">
                   <span class="btn-area">
                     <span data-text="{{workTogether.convBtn.btnText}}">
                       {{workTogether.convBtn.btnText}}
@@ -118,7 +118,7 @@
         <div class="row">
           <div class="col-12">
             <div class="site-footer-logo">
-              <a href="/">
+              <a href="/portfolio/">
                 <img src="{{footer.footerLogo}}" alt="logo-footer">
               </a>
             </div>
@@ -151,7 +151,7 @@
               <h5 class="site-footer-widget-title">{{footer.socialHeading}}</h5>
               <ul class="site-footer-widget-links">
                 {% for socialMedia in footer.socialMedia %}
-                <li><a href="/{{socialMedia.link}}">{{socialMedia.text}}</a></li>
+                <li><a href="/portfolio/{{socialMedia.link}}">{{socialMedia.text}}</a></li>
                 {% endfor %}
               </ul>
             </div>
