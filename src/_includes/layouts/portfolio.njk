@@ -14,7 +14,7 @@
           <div class="col-lg-4">
             <a href="#project" class="site-project-header-action scroll-to">
               <span>Scroll Down</span>
-              <img src="{{ '../assets/images/arrow-down.svg' | url }}" alt="arrow-down">
+              <img src="{{ '/assets/images/arrow-down.svg' | url }}" alt="arrow-down">
             </a>
           </div>
         </div>
@@ -46,10 +46,10 @@
                     <li class="page-item"><a class="page-link" href="{{pagination.href.previous}}">Previous</a></li>
                     {% endif %}
                     {% for pageEntry in pagination.hrefs %}
-                    <li {% if page.url == pageEntry %}
+                    <li {% if page.url = pageEntry %}
                           class="page-item active"><a class="page-link" href="{{pageEntry}}">{{loop.index}}</a></li>
                         {% else %}
-                          class="page-item"><a class="page-link" href="{{pageEntry}}">{{loop.index}}</a></li>
+                          <li class="page-item"><a class="page-link" href="{{pageEntry}}">{{loop.index}}</a></li>
                         {% endif %}
                     {% endfor %}
                     {% if pagination.href.next %}
