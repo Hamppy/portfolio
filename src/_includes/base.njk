@@ -16,20 +16,20 @@
 
     <!-- Slick Carousel -->
     <link rel="stylesheet" href="/assets/vendor/slick/slick.css" />
-    <link rel="stylesheet" href="{{ '/assets/vendor/slick/slick-theme.css' | url }}" />
+    <link rel="stylesheet" href="/assets/vendor/slick/slick-theme.css" />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="{{ '/assets/vendor/font-awesome/css/font-awesome.min.css' | url }} "
+      href="assets/vendor/font-awesome/css/font-awesome.min.css"
     />
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="{{ '/assets/vendor/bootstrap/bootstrap.min.css' | url }}" />
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/bootstrap.min" />
     <!-- Stylesheets -->
-    <link href="{{ '/assets/css/style.css' | url }}" rel="stylesheet" />
+    <link href="/assets/css/style.css" rel="stylesheet" />
 
     <!--Favicon-->
-    <link rel="shortcut icon" href="{{ '/assets/images/favIcon.png' | url }}" type="image/x-icon" />
-    <link rel="icon" href="{{ '/assets/images/favIcon.png' | url }}" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/images/favIcon.png" type="image/x-icon" />
+    <link rel="icon" href="/assets/images/favIcon.png" type="image/x-icon" />
   </head>
 
   <body>
@@ -62,7 +62,7 @@
             </li>
             {% endfor %}
             <li class="nav-item">
-              <a class="nav-link btn btn-sm btn-primary btn-sm-rounded" href="/portfolio/{{nav.navBtnLink}}">
+              <a class="nav-link btn btn-sm btn-primary btn-sm-rounded" href="/{{nav.navBtnLink}}">
                 <span class="btn-area">
                   <span data-text="{{nav.navBtnText}}">
                     {{nav.navBtnText}}
@@ -88,7 +88,7 @@
             <h1 class="site-cta-title">{{workTogether.heading}}</h1>
             <ul class="site-cta-buttons">
               <li>
-                <a href="/portfolio/{{workTogether.submitBtn.btnLink}}" class="btn btn-secondary">
+                <a href="/{{workTogether.submitBtn.btnLink}}" class="btn btn-secondary">
                   <span class="btn-area">
                     <span data-text="{{workTogether.submitBtn.btnText}}">
                       {{workTogether.submitBtn.btnText}}
@@ -97,7 +97,7 @@
                 </a>
               </li>
               <li>
-                <a href="/portfolio/{{workTogether.convBtn.btnLink}}" class="btn btn-primary">
+                <a href="/{{workTogether.convBtn.btnLink}}" class="btn btn-primary">
                   <span class="btn-area">
                     <span data-text="{{workTogether.convBtn.btnText}}">
                       {{workTogether.convBtn.btnText}}
@@ -185,8 +185,8 @@
     </footer>
   {% endblock %}
     <!-- <script src="js/vendor.js"></script> -->
-    <script src="{{ '/assets/vendor/jQuery/jquery.min.js' | url }}"></script>
-    <script src="{{ '/assets/vendor/bootstrap/bootstrap.min.js' | url }}"></script>
-    <script src="{{ '/assets/js/script.js' | url }}"></script>
+    <script src="/assets/vendor/jQuery/jquery.min.js"></script>
+    <script src="/assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>
