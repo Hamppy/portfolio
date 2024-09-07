@@ -46,7 +46,7 @@
                     <li class="page-item"><a class="page-link" href="{{pagination.href.previous}}">Previous</a></li>
                     {% endif %}
                     {% for pageEntry in pagination.hrefs %}
-                    <li {% if page.url = pageEntry %}
+                    <li {% if page.url == pageEntry %}
                           class="page-item active"><a class="page-link" href="{{pageEntry}}">{{loop.index}}</a></li>
                         {% else %}
                           <li class="page-item"><a class="page-link" href="{{pageEntry}}">{{loop.index}}</a></li>
