@@ -1,5 +1,5 @@
 {
-  "footerLogo": "/assets/images/logo-footer.png",
+  "footerLogo": "../assets/images/logo-footer.png",
 
   "contactsHeading": "Contact Info",
   "contactsInfo":[
