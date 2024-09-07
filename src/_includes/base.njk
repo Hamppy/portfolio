@@ -15,7 +15,7 @@
     />
 
     <!-- Slick Carousel -->
-    <link rel="stylesheet" href="{{ '/assets/vendor/slick/slick.css' | url }}" />
+    <link rel="stylesheet" href="/assets/vendor/slick/slick.css" />
     <link rel="stylesheet" href="{{ '/assets/vendor/slick/slick-theme.css' | url }}" />
     <!-- Font Awesome -->
     <link
@@ -55,9 +55,9 @@
             {% for navLink in nav.navLinks %}
             <li class="nav-item">
               {% if navLink == "home" %}
-                <a class="nav-link" href="/portfolio/">{{navLink | capitalize}}</a>
+                <a class="nav-link" href="/">{{navLink | capitalize}}</a>
               {% else %}
-                <a class="nav-link" href="/portfolio/{{navLink}}">{{navLink | capitalize}}</a> 
+                <a class="nav-link" href="/{{navLink}}">{{navLink | capitalize}}</a> 
               {% endif %} 
             </li>
             {% endfor %}
@@ -118,7 +118,7 @@
         <div class="row">
           <div class="col-12">
             <div class="site-footer-logo">
-              <a href="/portfolio/">
+              <a href="/">
                 <img src="{{footer.footerLogo}}" alt="logo-footer">
               </a>
             </div>
@@ -151,7 +151,7 @@
               <h5 class="site-footer-widget-title">{{footer.socialHeading}}</h5>
               <ul class="site-footer-widget-links">
                 {% for socialMedia in footer.socialMedia %}
-                <li><a href="/portfolio/{{socialMedia.link}}">{{socialMedia.text}}</a></li>
+                <li><a href="/{{socialMedia.link}}">{{socialMedia.text}}</a></li>
                 {% endfor %}
               </ul>
             </div>
