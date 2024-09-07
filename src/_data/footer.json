@@ -1,5 +1,5 @@
 {
-  "footerLogo": "../assets/images/logo-footer.png",
+  "footerLogo": "./assets/images/logo-footer.png",
 
   "contactsHeading": "Contact Info",
   "contactsInfo":[
@@ -64,6 +64,6 @@
   "brandHeading":"We help brands:",
   "brandMotto":["develop design solutions","produce valuable cultural content","create fresh brand experience"],
 
-  "back2topIcon":"/assets/images/to-top.svg",
+  "back2topIcon":"./assets/images/to-top.svg",
   "customerComment":"I want to visit again"
 }
