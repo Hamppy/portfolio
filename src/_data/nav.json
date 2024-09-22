@@ -1,4 +1,4 @@
 {
-  "navLogo":"{{ '/assets/images/logo.png' | url }}",
-  "navLinks":["home","about","portfolio"]
+  "navLogo":"/assets/images/logo.png",
+  "navLinks":["home","about","projects"]
 }

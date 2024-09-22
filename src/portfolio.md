@@ -1,5 +1,5 @@
 ---
-layout: layouts/portfolio.njk
+layout: layouts/projects.njk
 pagination:
   data: collections.portfolios
   size: 3

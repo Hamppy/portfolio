@@ -12,10 +12,10 @@ hero:
     text: "Connect with us"
     link: "contact"
 
-portfolio:
+projects:
   subTitle: "OUR RECENT WORKS"
   title: "Crafting experiences and seeking to make the complex clear & beautiful."
   seeAllbtn:
-    link: "portfolio"
+    link: "projects"
     text: "MORE WORKS"
 ---
