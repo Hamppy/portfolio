@@ -24,25 +24,25 @@
                   </a>
                 </li>
                 <li>
-                  <a href="/{{hero.connectBtn.link}}" class="btn btn-primary">
+{#                   <a href="/{{hero.connectBtn.link}}" class="btn btn-primary">
                     <span class="btn-area">
                       <span data-text="{{hero.connectBtn.text}}">
                         {{hero.connectBtn.text}}
                       </span>
                     </span>
-                  </a>
+                  </a> #}
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-      <a href="#counter" class="site-hero-scroll scroll-to">
+{#       <a href="#counter" class="site-hero-scroll scroll-to">
         <img src="/assets/images/arrow-down.svg" alt="arrow-down">
-      </a>
+      </a> #}
     </section>
 
-    <section class="site-counter" id="counter">
+{#     <section class="site-counter" id="counter">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -60,18 +60,18 @@
           {% endfor %}
         </div>
       </div>
-    </section>
+    </section> 
 
     <section class="site-project" id="project">
       <div class="container">
         <div class="row">
           <div class="col-12">
             <div class="section-title">
-              <h2>{{portfolio.subTitle}}</h2>
+              <h2>{{projets.subTitle}}</h2>
               <p>{{portfolio.title}}</p>
             </div>
           </div>
-          {% for portfolio in collections.portfolios %}
+          {% for projects in collections.portfolios %}
           <div class="col-lg-6 col-md-10 mx-auto">
             <div class="site-project-item">
               <div class="site-project-item-thumb">
@@ -80,7 +80,7 @@
               <div class="site-project-item-content">
                 <span>{{portfolio.data.subTitle}}</span>
                 <h3>{{portfolio.data.title}}</h3>
-                <a href="{{portfolio.data.page.url}}" class="read-more">{{portfolio.data.linkText}}</a>
+                <a href="{{projects.data.page.url}}" class="read-more">{{portfolio.data.linkText}}</a>
               </div>
             </div>
           </div>
@@ -125,6 +125,6 @@
           {% endfor %}
         </div>
       </div>
-    </section>
+    </section>#}
   
 {% endblock %}

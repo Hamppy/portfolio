@@ -2,52 +2,77 @@
 
 {% block content %}
 
-    <section class="site-project-single-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <div class="site-project-single">
-              <h1>
-                {{title}}
-              </h1>
-              <div class="site-project-single-description">
-                {{content | safe}}
-              </div>
-              <div class="site-project-single-image">
-                <img src="{{featureImg1}}" alt="project image">
-                <img src="{{featureImg2}}" alt="project image">
-              </div>
-              {% if collections.portfolios %}
-              {% set nextPost = collections.portfolios | getNextCollectionItem(page) %}
-              {% set previousPost = collections.portfolios | getPreviousCollectionItem(page) %}
-              
-              <div class="site-project-single-action d-flex justify-content-between">
-                {% if previousPost%}
-                <a href="{{previousPost.url}}">
-                  <img class="rev" src="{{ '/assets/images/to-top.svg' | url }}" alt="next project">
-                  <span class="link-area">
-                    <span data-text="{{previousPost.data.title}}">
-                      Previous Project
-                    </span>
-                  </span>
+<script src="/assets/js/photoswipe-lightbox.umd.min.js"></script>
+<script src= "/assets/js/photoswipe.umd.min.js"></script>
+
+<link rel="stylesheet" href="/assets/css/photoswipe.css">
+
+<section class="site-project-single-section">
+  <div class="container">
+    <div class="row">
+      <!-- Manually loop through featureImgs and descriptions using their index -->
+      {% for case in cases %}
+      <div class="col-12 site-project-single-description">
+        <h3>{{ case.header }}</h3>
+        <img src="{{ case.images[0] }}" alt="Sample image for {{ case.header }}" class="img-fluid">
+        <div class="gallery" id="project-gallery">
+        {% for image in case.images %}
+          {% if loop.index > 1 %}
+            {% if image.indexOf('web') > -1 %}
+                <a href="{{ image }}" data-pswp-height="855" data-pswp-width="1520" target="_blank">
+                  <img src="{{ image }}" alt="Responsive examples of {{ case.header }}" class="img-fluid">
                 </a>
-                {% endif %}
-                {% if nextPost %}
-                <a href="{{nextPost.url}}">
-                  <span class="link-area">
-                    <span data-text="{{nextPost.data.title}}">
-                      Next Project
-                    </span>
-                  </span>
-                  <img src="{{ '/assets/images/to-top.svg' | url }}" alt="next project">
-                </a> 
-                {% endif %} 
-              </div>
-              {% endif %}
-            </div>
-          </div>
+            {% elif image.indexOf('print') > -1 %}
+                <a href="{{ image }}" data-pswp-height="1440" data-pswp-width="760" target="_blank">
+                  <img src="{{ image }}" alt="Print layout of {{ case.header }}" class="img-fluid">
+                </a>
+            {% elif image.indexOf('poster') > -1 %}
+                <a href="{{ image }}" data-pswp-height="1340" data-pswp-width="960" target="_blank">
+                  <img src="{{ image }}" alt="Print layout of {{ case.header }}" class="img-fluid">
+                </a>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
         </div>
+          
+        {% if case.layouts and case.layouts | length > 0 %}
+        <p style="text-align: center">
+          <button class="toggle" data-toggle="collapse" href="#collapseExample{{ loop.index }}" role="button" aria-expanded="false" aria-controls="collapseExample{{ loop.index }}">
+             Expand / Collapse layouts
+          </button>
+        </p>
+        {% endif %}
+
+        <div class="collapse" id="collapseExample{{ loop.index }}">
+          <div class="card card-body">
+            {% for layout in case.layouts %}
+              {% if loop.index > 0 %}
+              <img class="layout" src="{{ layout }}" />
+              {% endif %}
+            {% endfor %}
+          </div>
+{#           <p style="text-align: center; margin-top: 30px;">
+            <button class="toggle" data-toggle="collapse" href="#collapseExample{{ loop.index }}" role="button" aria-expanded="false" aria-controls="collapseExample{{ loop.index }}">
+              Collapse layouts
+            </button>
+          </p> #}
+        </div>
+        
+        <p class="case-legend">{{ case.description | replace("\n", "<br />") | safe }}</p>
       </div>
-    </section>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '#project-gallery',
+    children: 'a',
+    pswpModule: PhotoSwipe,
+    preload: [1, 1]
+    });
+  lightbox.init();
+</script>
   
 {% endblock %}

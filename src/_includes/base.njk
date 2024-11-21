@@ -37,7 +37,7 @@
     <nav class="navbar navbar-expand-lg site-navigation">
       <div class="container">
         <a class="navbar-brand" href="/">
-          <img src="{{nav.navLogo}}" alt="nav-logo" />
+          <p class="tag">A. J. HÄMÄLÄINEN</p>
         </a>
         <button
           class="navbar-toggler collapsed"
@@ -61,15 +61,15 @@
               {% endif %} 
             </li>
             {% endfor %}
-            <li class="nav-item">
-{#               <a class="nav-link btn btn-sm btn-primary btn-sm-rounded" href="/{{nav.navBtnLink}}">
+{#            <li class="nav-item">
+               <a class="nav-link btn btn-sm btn-primary btn-sm-rounded" href="/{{nav.navBtnLink}}">
                 <span class="btn-area">
                   <span data-text="{{nav.navBtnText}}">
                     {{nav.navBtnText}}
                   </span>
                 </span>
-              </a> #}
-            </li>
+              </a> 
+            </li> #}
           </ul>
         </div>
       </div>
@@ -80,7 +80,7 @@
     {{content | safe}}
   {% endblock %}
 
-  {% block workTogether %}
+{#   {% block workTogether %}
     <section class="site-cta">
       <div class="container">
         <div class="row">
@@ -101,7 +101,7 @@
                   <span class="btn-area">
                     <span data-text="{{workTogether.convBtn.btnText}}">
                       {{workTogether.convBtn.btnText}}
-                    </span>
+                    </span> 
                   </span>
                 </a>
               </li>
@@ -110,18 +110,14 @@
         </div>
       </div>
     </section>
-  {% endblock %}
+  {% endblock %} #}
 
   {% block footer %}
     <footer class="site-footer">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="site-footer-logo">
-              <a href="/">
-                <img src="{{footer.footerLogo}}" alt="logo-footer">
-              </a>
-            </div>
+            <div class="site-footer-heading">&#127912;&nbsp;{{footer.footerHeading}}&nbsp;&#128208;</div>
           </div>
           <div class="col-lg-3 col-md-6">
             <div class="site-footer-widget">
@@ -151,7 +147,7 @@
               <h5 class="site-footer-widget-title">{{footer.socialHeading}}</h5>
               <ul class="site-footer-widget-links">
                 {% for socialMedia in footer.socialMedia %}
-                <li><a href="/{{socialMedia.link}}">{{socialMedia.text}}</a></li>
+                <li><a href="https://www.linkedin.com/in/anttijoonas" target="_blank">{{socialMedia.text}}</a></li>
                 {% endfor %}
               </ul>
             </div>
@@ -168,21 +164,24 @@
             </div>
           </div>
           <div class="col-lg-2 col-12">
-            <a href="#top" class="site-footer-widget-top">
-              <img src="{{footer.back2topIcon}}" alt="back-to-top">
-              <p>
-                {{footer.customerComment}}
+            <div class="site-footer-widget">
+              <h5 class="site-footer-widget-title">{{footer.learnHeading}}</h5>
+              <p class="site-footer-widget-description">
+              {% for learnMotto in footer.learnMotto %}
+                - {{learnMotto}}
+                <br>
+              {% endfor %}
               </p>
             </a>
-          </div>
-          <div class="col-12">
-            <div class="site-footer-copyright text-center my-3">
-              <p>© Copyright 2022 - All Rights Reserved by <a href="https://staticmania.com/" target="_blank">StaticMania</a> </p>
-            </div>
           </div>
         </div>
       </div>
     </footer>
+    <div>
+      <div class="copyright">
+        <p style="color:#ffffff;">© Copyright 2024 - AJH - Built by using <a href="https://github.com/StaticMania/roxo-eleventy" target="_blank">Roxo Eleventy</a></p>
+      </div>
+    </div>
   {% endblock %}
     <!-- <script src="js/vendor.js"></script> -->
     <script src="/assets/vendor/jQuery/jquery.min.js"></script>

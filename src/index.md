@@ -1,13 +1,13 @@
 ---
 layout: "layouts/homepage.njk"
 hero:
-  subTitle: "WE WORK HARD, WE PLAY HARD"
+  subTitle: "LEARNING TO DEVELOP — WORKING TO DELIVER"
   title:
-    firstPara: "We’re a Design Studio"
-    secondPara: "That Believes In Great Ideas"
+    firstPara: "Seasoned creative with"
+    secondPara: "keen enthusiasm for </>"
   seeWorkBtn:
-    text: "See Our Works"
-    link: "#project"
+    text: "See My Works"
+    link: "projects"
   connectBtn: 
     text: "Connect with us"
     link: "contact"
