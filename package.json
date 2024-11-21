@@ -6,7 +6,7 @@
    "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
       "dev": "npx eleventy --serve",
-      "build": "cross-env NODE_ENV=production npx @11ty/eleventy --pathprefix 'portfolio'"
+      "build": "set NODE_ENV=production npx eleventy --pathprefix 'portfolio'"
    },
    "repository": {
       "type": "git",
@@ -23,7 +23,6 @@
       "@11ty/eleventy": "^3.0.0",
       "@11ty/eleventy-img": "^5.0.0",
       "@types/11ty__eleventy-img": "^4.0.0",
-      "cross-env": "^7.0.3",
       "photoswipe": "^5.4.4"
    }
 }
