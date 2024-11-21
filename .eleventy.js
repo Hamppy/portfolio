@@ -1,4 +1,4 @@
-/* const sharp = require('sharp');
+const sharp = require('sharp');
 const Image = require('@11ty/eleventy-img');
 
 const GALLERY_IMAGE_WIDTH = 192;
@@ -35,14 +35,14 @@ async function galleryImageShortcode(src, alt) {
             <img src="${genMetadata.jpeg[0].url}" alt="${alt}" />
         </a>
     `.replace(/(\r\n|\n|\r)/gm, "");;
-} */
+}
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
-/*   eleventyConfig.addLiquidShortcode('galleryImage', galleryImageShortcode)
+  eleventyConfig.addLiquidShortcode('galleryImage', galleryImageShortcode)
   eleventyConfig.addCollection("portfolios", function (collectionApi) {
     return collectionApi.getFilteredByTag("portfolio").sort((a, b) => a.data.order - b.data.order);
-  }); */
+  });
 
   return {
     passthroughFileCopy: true,
