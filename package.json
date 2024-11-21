@@ -20,11 +20,11 @@
    },
    "homepage": "https://github.com/Tanvir9290/Roxo_eleventy#readme",
    "dependencies": {
-      "@11ty/eleventy-img": "^5.0.0",
       "photoswipe": "^5.4.4"
    },
    "devDependencies": {
       "@11ty/eleventy": "^3.0.0",
+      "@11ty/eleventy-img": "^5.0.0",
       "@types/11ty__eleventy-img": "^4.0.0",
       "cross-env": "^7.0.3"
    }
