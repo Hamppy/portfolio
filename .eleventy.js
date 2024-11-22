@@ -52,6 +52,7 @@ module.exports = function (eleventyConfig) {
       input: "src",
       output: "_site",
       include: "my_includes",
+      pathPrefix: "/portfolio/"
     },
   };
 };
