@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio</title>
+    <meta name="generator" content="Eleventy">
+    <!--Meta For No Index-->
+    <meta name="robots" content="noindex, Nofollow, Noimageindex">
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="/assets/vendor/slick/slick.css" />
+    <link rel="stylesheet" href="/assets/vendor/slick/slick-theme.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="/assets/vendor/font-awesome/css/font-awesome.min.css"
+    />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/bootstrap.min.css" />
+    <!-- Stylesheets -->
+    <link href="/assets/css/style.css" rel="stylesheet" />
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/images/favIcon.png" type="image/x-icon" />
+    <link rel="icon" href="/assets/images/favIcon.png" type="image/x-icon" />
+  </head>
+
+  <body>
+  
+    <nav class="navbar navbar-expand-lg site-navigation">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <p class="tag">A. J. HÄMÄLÄINEN</p>
+        </a>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#sitenavbar"
+        >
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="sitenavbar">
+          <ul class="navbar-nav ml-auto main-nav">
+            
+            <li class="nav-item">
+              
+                <a class="nav-link" href="/">Home</a>
+               
+            </li>
+            
+            <li class="nav-item">
+              
+                <a class="nav-link" href="/projects">Projects</a> 
+               
+            </li>
+            
+            <li class="nav-item">
+              
+                <a class="nav-link" href="/about">About</a> 
+               
+            </li>
+            
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+
+  
+
+<script src="/assets/js/photoswipe-lightbox.umd.min.js"></script>
+<script src= "/assets/js/photoswipe.umd.min.js"></script>
+
+<link rel="stylesheet" href="/assets/css/photoswipe.css">
+
+<section class="site-project-single-section">
+  <div class="container">
+    <div class="row">
+      <!-- Manually loop through featureImgs and descriptions using their index -->
+      
+      <div class="col-12 site-project-single-description">
+        <h3>Virgin Oil Co menù da tavolo</h3>
+        <img src="" alt="Sample image for Virgin Oil Co menù da tavolo" class="img-fluid">
+        <div class="gallery" id="project-gallery">
+        
+        </div>
+          
+        
+
+        <div class="collapse" id="collapseExample1">
+          <div class="card card-body">
+            
+          </div>
+
+        </div>
+        
+        <p class="case-legend">Virgin Oil Co. took a first step for visual refreshment during the summer 2013. This traditional italian american restaurant in the centre of Helsinki was opened back in 2010 so the time was right for some adjustments. A new marketing strategy according to certain customer profiles was drawn up and original visual identity decomposed for analysis. The name Virgin Oil Co. is an imaginary title for a fictive olive oil importer located in New York during 1920’ies. The location, decade and theme itself were retained, but aesthetically refined for more sophisticated and simplified look. Naturally the table menu was the first utensil to be updated.<br /><br /><span class="bold">Original Virgin Oil & Co. insignia</span>: Jarkko Nevakallio, <span class="bold">Copywriter</span>: Katri Karsi | <span class="bold">Client</span>: Juha Hauta, HOK-Elanto Restaurants<br /></p>
+      </div>
+      
+      <div class="col-12 site-project-single-description">
+        <h3>Gastropub Stone&#39;s</h3>
+        <img src="" alt="Sample image for Gastropub Stone&#39;s" class="img-fluid">
+        <div class="gallery" id="project-gallery">
+        
+        </div>
+          
+        
+
+        <div class="collapse" id="collapseExample2">
+          <div class="card card-body">
+            
+          </div>
+
+        </div>
+        
+        <p class="case-legend">Gastropub Stone’s underwent quite extensive facelift during the summer 2012. Along with the outfit came new cuisine and distinctive selection of beverages. I was assigned to deliver typography, textures, layout and visual aesthetics for graphics, photos and campaign images.<br /><br /><span class="bold">Art Director</span>: Sami Lainio, <span class="bold">Copywriters</span>: Jan-Erik Ehrström & Saara Kullström-Koljonen | <span class="bold">Client</span>: Kenneth Granroth, HOK-Elanto Restaurants<br /></p>
+      </div>
+      
+      <div class="col-12 site-project-single-description">
+        <h3>Post Control Helsinki</h3>
+        <img src="" alt="Sample image for Post Control Helsinki" class="img-fluid">
+        <div class="gallery" id="project-gallery">
+        
+        </div>
+          
+        
+
+        <div class="collapse" id="collapseExample3">
+          <div class="card card-body">
+            
+          </div>
+
+        </div>
+        
+        <p class="case-legend">Visual identity for Helsinki based high-end post production company in Suvilahti Power Plant. The preliminary sketches of the logo were mostly focused on American Typewriter typeface. Fortunately, after a few quite meticulous sketches, the client and I collectively decided to find an alternative with more geometric and analogue look. And very shortly after the decision a typeface called Grover was selected. Among tv & cinema professionals the key colour red needs no further argumentations.<br /><br /><span class="bold">Clients</bold>: Jukka Kujala, Marko Terävä, Petri Riikonen & Juuso Selin | Post Control Helsinki  <br /></p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '#project-gallery',
+    children: 'a',
+    pswpModule: PhotoSwipe,
+    preload: [1, 1]
+    });
+  lightbox.init();
+</script>
+  
+
+
+
+
+  
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="site-footer-heading">&#127912;&nbsp;VERSATILE DESIGNER&nbsp;&#128208;</div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="site-footer-widget">
+              <h5 class="site-footer-widget-title">Contact</h5>
+              <p class="site-footer-widget-description">
+              
+                <a href="mailto:">a.j.hamalainen@outlook.com</a>
+                <br>
+              
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="site-footer-widget">
+              <h5 class="site-footer-widget-title">Sitemap</h5>
+              <ul class="site-footer-widget-links">
+                
+                 <li>
+                  <a href="/about">About</a>
+                 </li> 
+                
+                 <li>
+                  <a href="/projects">Projects</a>
+                 </li> 
+                
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="site-footer-widget">
+              <h5 class="site-footer-widget-title">Resume</h5>
+              <ul class="site-footer-widget-links">
+                
+                <li><a href="https://www.linkedin.com/in/anttijoonas" target="_blank">LinkedIn</a></li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="site-footer-widget">
+              <h5 class="site-footer-widget-title">I contribute in:</h5>
+              <p class="site-footer-widget-description">
+              
+                - Improving UI / UX / CX
+                <br>
+              
+                - Elevating Brand Value
+                <br>
+              
+                - Associating Design &amp; Dev
+                <br>
+              
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-12">
+            <div class="site-footer-widget">
+              <h5 class="site-footer-widget-title">I&#39;m currently learning:</h5>
+              <p class="site-footer-widget-description">
+              
+                - Front-end Development
+                <br>
+              
+                - Spotify Backstage
+                <br>
+              
+                - AI &amp; Accessibility
+                <br>
+              
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div>
+      <div class="copyright">
+        <p style="color:#ffffff;">© Copyright 2024 - AJH - Built by using <a href="https://github.com/StaticMania/roxo-eleventy" target="_blank">Roxo Eleventy</a></p>
+      </div>
+    </div>
+  
+    <!-- <script src="js/vendor.js"></script> -->
+    <script src="/assets/vendor/jQuery/jquery.min.js"></script>
+    <script src="/assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
