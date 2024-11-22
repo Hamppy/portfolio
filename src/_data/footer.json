@@ -1,0 +1,37 @@
+{
+  "footerHeading": "VERSATILE DESIGNER",
+
+  "contactsHeading": "Contact",
+  "contactsInfo":[
+    {
+      "link":"mailto:",
+      "text":"a.j.hamalainen@outlook.com"
+    }
+  ],
+
+  "siteMapHeading":"Sitemap",
+  "siteMap":[
+    {
+      "link":"about",
+      "text":"About"
+    },
+    {
+      "link":"projects",
+      "text":"Projects"
+    }
+  ],
+
+  "socialHeading":"Resume",
+  "socialMedia":[
+    {
+      "link":"linkedin",
+      "text":"LinkedIn"
+    }
+  ],
+  
+  "brandHeading":"I contribute in:",
+  "brandMotto":["Improving UI / UX / CX","Elevating Brand Value","Associating Design & Dev"],
+
+  "learnHeading":"I'm currently learning:",
+  "learnMotto":["Front-end Development","Spotify Backstage","AI & Accessibility"]
+}

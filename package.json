@@ -1,0 +1,27 @@
+{
+   "name": "roxo_eleventy",
+   "version": "1.0.0",
+   "description": "",
+   "main": ".eleventy.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "npx eleventy --serve",
+      "build": "env NODE_ENV=production npx eleventy --pathprefix 'hamppy.github.io'"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Tanvir9290/Roxo_eleventy.git"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/Tanvir9290/Roxo_eleventy/issues"
+   },
+   "homepage": "https://github.com/Tanvir9290/Roxo_eleventy#readme",
+   "dependencies": {
+      "@11ty/eleventy": "^3.0.0",
+      "@11ty/eleventy-img": "^5.0.0",
+      "photoswipe": "^5.4.4"
+   }
+}
