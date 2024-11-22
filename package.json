@@ -6,7 +6,7 @@
    "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
       "dev": "npx eleventy --serve",
-      "build": "env NODE_ENV=production npx eleventy --pathprefix 'hamppy.github.io/portfolio'"
+      "build": "eleventy"
    },
    "repository": {
       "type": "git",
