@@ -433,6 +433,7 @@ textarea.form-control {
 .site-project-item, .site-blog-post {
   position: relative;
   border:1px solid rgba(0, 0, 0, 0.09);
+  border-radius: 4px;
   margin-bottom: 30px;
   transition: all 0.3s ease-in;
   overflow: hidden;
